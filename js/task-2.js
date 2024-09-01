@@ -24,12 +24,7 @@ const calculateAverage = (array) =>
 
 calcAverageCalories = (days) =>
 {
-    const dailyCalories = []
-
-    for (const array of days)
-    {
-        dailyCalories.push(array['calories'])
-    }
+    const dailyCalories = days.map(day => day['calories'])
 
     if (findArrayLength(dailyCalories) > 0 )
     {
