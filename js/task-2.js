@@ -19,7 +19,8 @@ const calculateSum = (array) =>
 
 const calculateAverage = (array) =>
 {
-    return calculateSum(array)/findArrayLength(array)
+    return calculateSum(array)/+
+    findArrayLength(array)
 }
 
 calcAverageCalories = (days) =>
